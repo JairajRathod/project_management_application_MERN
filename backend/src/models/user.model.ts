@@ -8,6 +8,8 @@ export interface UserModelInterface extends Document {
   twoFactorEnabled: boolean;
   twoFactorSecret?: string;
   avatar?: string;
+  verificationOtp?: string;
+  verificationOtpExpiry?: string;
   isVerified: boolean;
   isActive: boolean;
   createdAt: Date;
